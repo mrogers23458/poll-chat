@@ -2,6 +2,8 @@
 const expresss = require('express')
 //require ApollServer, accepts graphql requests
 const { ApolloServer, gql } = require('apollo-server-express')
+//import mongoose connection to mongodb as db
+const db = require ('./config/connection')
 
 //async function required to initialize server
 async function start() {
@@ -18,8 +20,11 @@ await server.start()
 //apply express to server as middleware handler
 server.applyMiddleware({app})
 
-//define where the server will start
-app.listen(PORT, () => console.log(`server ready at http://localhost:3000${server.graphqlPath} `))
+db.once('Open', () => {
+        //define where the server will start
+        app.listen(PORT, () => console.log(`server ready at http://localhost:3000${server.graphqlPath} `))
+    }
+)
 
 }
 
