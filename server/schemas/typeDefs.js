@@ -9,6 +9,12 @@ const typeDefs = gql `
     type Query {
         messages: [Message]
     }
+
+    type Mutation {
+        postMessage(
+            content: String
+        ): Message
+    }
 `
 
 module.exports = typeDefs

@@ -5,6 +5,12 @@ const resolvers = {
         messages: async () => {
             return Message.find()
         }
+    },
+
+    Mutation: {
+        postMessage: async (parent, { content }) => {
+            return Message.create({content})
+        }
     }
 }
 
