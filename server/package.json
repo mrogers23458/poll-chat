@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "poll-chat server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrogers23458/poll-chat.git"
+  },
+  "author": "Mike Rogers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrogers23458/poll-chat/issues"
+  },
+  "homepage": "https://github.com/mrogers23458/poll-chat#readme"
+}
