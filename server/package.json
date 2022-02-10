@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/mrogers23458/poll-chat/issues"
   },
-  "homepage": "https://github.com/mrogers23458/poll-chat#readme"
+  "homepage": "https://github.com/mrogers23458/poll-chat#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.6.3",
+    "express": "^4.17.2",
+    "graphql": "^16.3.0",
+    "mongoose": "^6.2.1",
+    "path": "^0.12.7"
+  }
 }
