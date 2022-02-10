@@ -15,6 +15,10 @@ const typeDefs = gql `
             content: String
         ): Message
     }
+
+    type Subscription {
+        messageCreated: Message
+    }
 `
 
 module.exports = typeDefs

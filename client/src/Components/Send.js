@@ -12,8 +12,6 @@ export default function Send () {
         console.log(message)
     }
 
-   /*  const postMessage = useMutation(POST_MESSAGE) */
-
     return(
         <div className="send-box">
             <form className="send-form">
