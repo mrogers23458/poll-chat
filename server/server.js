@@ -10,7 +10,7 @@ const db = require ('./config/connection')
 //async function required to initialize server
 async function start() {
     //define port
-    const PORT = 3000
+    const PORT = 3001
 
     //create a new instance of ApolloServer with typeDefs and Resolvers imported from schemas
     const server = new ApolloServer({ typeDefs, resolvers })
@@ -26,7 +26,7 @@ async function start() {
 
     db.once('open', () => {
             //define where the server will start
-            app.listen(PORT, () => console.log(`server ready at http://localhost:3000${server.graphqlPath} `))
+            app.listen(PORT, () => console.log(`server ready at http://localhost:${PORT}${server.graphqlPath} `))
         }
     )
 
